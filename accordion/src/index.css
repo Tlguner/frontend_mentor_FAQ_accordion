@@ -1,0 +1,97 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; /* Prevent overflow due to absolute positioning */
+}
+
+/* Background styles */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.background svg {
+  width: 100%;
+  height: auto; /* Keep aspect ratio */
+  display: block; /* Ensure it takes up full container */
+}
+
+/* Card styles */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 550px;
+  width: 90%;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 100px; /* Adjust to provide space for the SVG */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure it stays above the SVG background */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+/* FAQ section styles */
+.FAQ {
+  font-size: 40px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 10%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Header-flex styles */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Button styles */
+.btn {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Paragraph styles */
+.prag {
+  color: hsl(0, 0%, 40%);
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+/* Override the default hr styling */
+hr {
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
